@@ -1,0 +1,52 @@
+<!--
+	添加不同的class名，有不同的样式：
+		model：最基本的样式
+		title：每一页标题样式
+-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 练习 001</title>
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/js001.js"></script>
+</head>
+<body>
+	<div class="model title">JavaScript 练习 001</div>
+	<div class="model">
+		1.说明事件<br/>
+		<button onclick="js001_01()">弹出窗口</button>
+	</div>
+	<div class="model">
+		2.移入移出<br/>
+		<p onmouseover="js001_02()" onmouseout="js001_02()">鼠标经过这里出现按钮~</p>
+		<button id="js001_02">我是隐藏的按钮</button>
+	</div>
+	<div class="model" id="js001_03" onmouseover="js001_03()" onmouseout="js001_03()">
+		3.函数 鼠标经过这个 div 执行变窄变高变色 移出再恢复<br/>
+	</div>
+	<div class="model" >
+		<a href="#" onmouseover="js001_04()" onmouseout="js001_04()">
+			4.鼠标经过就弹出层 (函数、变量)</a><br/>
+		<div id="js001_04">这是弹出层</div>
+	</div>
+	<div class="model" >
+		<a href="#" onclick="js001_05()">
+			5.鼠标点击就弹出层 (函数、变量、判断)</a><br/>
+		<div id="js001_05">这是弹出层</div>
+	</div>
+	<div class="model" >
+		6. 网页换肤<br/>
+		<button onclick="js001_06_01()">样式 1</button>
+		<button onclick="js001_06_02()">样式 2</button>
+	</div>
+	<div class="model" >
+		7. 显示隐藏<br/>
+		<button onclick="js001_07()">显示隐藏</button>
+		<button id="js001_07">显示隐藏</button>
+	</div>
+	<div class="model" >
+		小结<br/>
+	</div>
+</body>
+</html>
