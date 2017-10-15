@@ -1,20 +1,11 @@
 /**
  * 子页的基本CSS
  */
-.model{
-	padding: 20px;
-	margin: 10px;
-	
-	border: 1px solid lightgrey;
-	border-bottom: 5px solid green;
-	border-radius: 5px;
-	box-shadow: #666 0px 0px 5px;
-}
-.title{
-	font-size: 23px;
-}
 p{
 	margin-left: 20px;
+}
+a{
+	text-decoration: none;
 }
 button{
 	padding: 8px 10px;
@@ -26,6 +17,17 @@ button{
 	border-radius: 5px;
 	outline: none;
 }
-a{
-	text-decoration: none;
+
+
+
+.model{
+	padding: 20px;
+	margin: 10px;
+	
+	border-bottom: 4px solid green;
+	border-radius: 5px;
+	box-shadow: #666 0px 0px 1px;
+}
+.title{
+	font-size: 23px;
 }
