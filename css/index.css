@@ -1,1 +1,31 @@
 /*首页样式*/
+.title span {
+	float: right;
+	font-size: 17px;
+}
+.sideBar {
+	float: right;
+	position: relative; 
+	margin: 0 2% 0 0;
+	width: 25%;
+	background: #7698A7;
+}
+ul {
+	display: block;
+	position: absolute;
+	margin:5px 5% 0 2%;
+	width: 70%;
+	list-style-type: none;
+  background: #7698A7;
+}
+ul li{
+	text-decoration: none;
+	border: 1px solid #7698A7;
+	height: 50px;
+}
+ul ol li {
+	height: 20px;
+	
+	padding: 0 20px;
+	    background: #E7EFF1;
+}

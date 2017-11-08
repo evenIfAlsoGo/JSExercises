@@ -1,0 +1,57 @@
+/**
+ * 子页的基本CSS
+ */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: STheiti, Verdana, 宋体, Geneva, sans-serif;
+	
+}
+p {
+	margin-left: 20px;
+}
+a {
+	text-decoration: none;
+}
+button {
+	margin: 10px 10px 10px 30px;
+	padding: 8px 10px;
+	color: white;
+	outline: none;
+	background: royalblue;
+	border: none;
+	border-radius: 5px;
+}
+
+
+
+
+.model {
+	margin: 10px;
+	padding: 20px;
+	border-bottom: 4px solid green;
+	border-radius: 5px;
+	box-shadow: #666 0px 0px 1px;
+}
+.title {
+	font-size: 23px;
+}
+.sourceCode {
+	margin: 0 20px;
+	padding: 1px 3px;	
+	width: 20%;
+	font-size: 15px;
+	background: #DDEDFB;
+	border: 1px solid #0099CC;
+}
+.sourceCode p {
+	margin: -1px -4px -1px -3px;
+	padding: 1px 3px;
+	background: #F2F6FB;
+	border-right: 1px solid #0099CC;
+	border-bottom: 1px solid #0099CC;
+}
+.sourceCode pre {
+	background: #DDEDFB;
+	margin: 5px 0 5px 5px;
+}
