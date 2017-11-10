@@ -1,10 +1,12 @@
-/**
- * 子页的基本CSS
- */
+/*基本样式*/
 * {
 	margin: 0;
 	padding: 0;
+	font-size: 18px;
 	font-family: STheiti, Verdana, 宋体, Geneva, sans-serif;
+}
+body {
+	background: #BFDBBB;
 }
 p {
 	margin-left: 20px;
@@ -17,7 +19,7 @@ a:hover {
 	text-decoration: underline;
 }
 button {
-	margin: 10px 10px 10px 30px;
+	margin: 15px 10px 0px 50px;
 	padding: 8px 10px;
 	color: white;
 	outline: none;
@@ -32,36 +34,3 @@ img {
 	max-width: 100%;
 }
 
-.model {
-	margin: 10px;
-	padding: 25px;
-	border-bottom: 4px solid green;
-	border-radius: 5px;
-	box-shadow: #666 0px 0px 1px;
-}
-.title {
-	font-size: 23px;
-}
-.title span {
-	float: right;
-	font-size: 17px;
-}
-.sourceCode {
-	margin: 0 20px;
-	padding: 1px 3px;	
-	width: 30%;
-	font-size: 15px;
-	background: #DDEDFB;
-	border: 1px solid #0099CC;
-}
-.sourceCode p {
-	margin: -1px -4px -1px -3px;
-	padding: 1px 3px;
-	background: #F2F6FB;
-	border-right: 1px solid #0099CC;
-	border-bottom: 1px solid #0099CC;
-}
-.sourceCode pre {
-	background: #DDEDFB;
-	margin: 5px 0 5px 5px;
-}

@@ -1,0 +1,45 @@
+/* 各个模块样式 */
+.title{
+	font-size: 28px;
+	text-align: center;
+}
+/* content 模块 */
+.content {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: #666 1px 1px 2px;
+}
+.content-title {
+}
+
+/* list 模块*/
+.listTitle {
+	height: 50px;
+	line-height: 50px;
+	font-weight: 700;
+}
+.listTime {
+	display: block;
+	float: right;
+	font-size: 15px;
+}
+.list ul li{
+	list-style: none;
+	background: #63a761;
+}
+.list ul ol li{
+	height: 20px;
+	background: #EBF5DF;
+}
+
+/* sideBar 模块 */
+.sideBar {
+	background: #63a761;
+}
+.sideBar div {
+	background: #EBF5DF;
+}
+.copyright {
+	text-align: center;
+	font-size: 15px;
+}

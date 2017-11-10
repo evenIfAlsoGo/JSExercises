@@ -4,72 +4,46 @@
 	<meta charset="UTF-8">
 	<title>JavaScript 练习 002</title>
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<base target="_blank" />
 </head>
 <body>
-	<div class="model title">JavaScript 练习 002 窗口</div>
-	<div class="model">
-		﻿小贴士 ：Window 对象表示浏览器中打开的窗口。
+	<div class="content title">JavaScript 练习 002 窗口</div>
+	<div class="content">
+		<p>小贴士✎ ：Window 对象表示浏览器中打开的窗口。</p>
 	</div>
-	
-	<div class="model">
+
+	<div class="content">
 		<p>1.获取屏幕各种尺寸</p> 
-		<button id="btn_getWindowInnerSize">尺寸</button>
-		<div class="sourceCode">
-			<p>代码语法：</p>
-			<span>
-				window.innerWidth;
-				||document.body.clientWidth;
-				||document.documentElement.clientWidth;
-				<br /><br />
-				window.innerHeight;
-				||document.body.clientHeight;
-				||document.documentElement.clientHeight;
-				<br /><br />
-				window.screen.height;
-				||window.screen.availHeight;
-				<br /><br />
-				window.screen.width;
-				||window.screen.availWidth;
-			</span>
+		<div class="jsShow">
+			<button id="btn_getWindowInnerSize">尺寸</button>
 		</div>
 	</div>
 
-	<div class="model">
+	<div class="content">
 		<p>2.打开新窗口</p> 
-		<button id="btn_openNewWindow">弹出窗口</button>
-		<div class="sourceCode">
-			<p>代码语法：</p>
-			<pre>window.open();</pre>
+		<div class="jsShow">
+			<button id="btn_openNewWindow">弹出窗口</button>
 		</div>
 	</div>
 
-	<div class="model">
+	<div class="content">
 		<p>3.关闭当前窗口</p>
-		<button id="btn_closeThisWindow">关闭窗口</button>(这个按钮会关闭这个页面的哦）
-		<div class="sourceCode">
-			<p>代码语法：</p>
-			<pre>window.close();</pre>
+		<div class="jsShow">
+			<button id="btn_closeThisWindow">关闭窗口</button>(这个按钮会关闭这个页面的哦）
 		</div>
 	</div>
 
-	<div class="model">
+	<div class="content">
 		<p>4.移动窗口</p>
-		<button id="btn_openMyWindow">新建窗口</button>
-		<button id="btn_moveWindow">移动窗口</button>
-		<div class="sourceCode">
-			<p>代码语法：</p>
-			<span>
-				window.moveTo(x,y);<br/>
-				window.resizeTo(width,height);<br/>
-				window.focus();
-			</span>
+		<div class="jsShow">
+			<button id="btn_openMyWindow">新建窗口</button>
+			<button id="btn_moveWindow">移动窗口</button>
 		</div>
 	</div>
 
-	<div class="model">
-		<p>注：moveTo,resizeTo 这两个窗口函数，在 ff 和 chrome 浏览器下，窗口对象必须是 window.open 出来的才可以，默认本地无法执行</p>
+	<div class="content">
+		<p>注：moveTo, resizeTo 这两个窗口函数，在 ff 和 chrome 浏览器下，窗口对象必须是 window.open 出来的才可以，默认本地无法执行</p>
 	</div>
 </body>
 <script src="../js/js002.js"></script>
