@@ -49,7 +49,7 @@ JSExercises
 
 # 主要模块
 
-index.html
+index.html 首页
 
 ​	├─   header	  头部 标题
 
@@ -59,35 +59,35 @@ index.html
 
 ​	│		├─ ul	
 
-​	│			├─ li 
+​	│			├─ li  第一部分
 
-​	│			│	└─ ol
+​	│			│	└─ ol  子列表
 
-​	│			├─ ...
+​	│			│     ....
 
-​	│			└─ li 
+​	│			└─ li 第...部分
 
-​	│				└─ ol
+​	│				└─ ol  子列表
 
-​	├─  sideBar
+​	├─  sideBar	侧边栏
 
-​	│		├─ guide
+​	│		├─ banner	关注我
 
-​	│		├─ banner
+​	│		├─ guide	帮助指南
 
-​	│		└─ friendLink
+​	│		└─ friendLink	友情链接
 
-​	└─  footer
+​	└─  footer	尾部 
 
-​			└─copyright
+​			└─copyrigh	版权信息
 
-pages.html
+pages.html	子页面
 
-​	├─ header 
+​	├─ header 	头部 标题
 
-​	├─ content
+​	├─ content	主内容 第一个习题
 
-​	│		└─ jsshow
+​	│		└─ jsshow	会被 DOM 操作
 
 ​	├─ ....
 
