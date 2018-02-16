@@ -1,3 +1,6 @@
+/**
+ * Created by evenIfAlsoGo on 2017/11/008.
+ */
 //获取尺寸
 let oBtn_getWindowInnerSize = document.getElementById("btn_getWindowInnerSize");
 oBtn_getWindowInnerSize.onclick = function(){

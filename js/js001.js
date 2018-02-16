@@ -1,3 +1,6 @@
+/**
+ * Created by evenIfAlsoGo on 2017/11/08.
+ */
 //alert 部分
 let oBtn_alert = document.getElementById("btn_alert");
 oBtn_alert.onclick = function(){

@@ -1,3 +1,6 @@
+/**
+ * Created by evenIfAlsoGo on 2018/02/16.
+ */
 window.onload=function () {
 	//模块1 鼠标经过 div 执行变窄变高变色 移出再恢复
 	var oDiv1 = document.getElementById("div1");

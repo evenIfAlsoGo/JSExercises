@@ -1,5 +1,5 @@
 /**
- * Created by Rainysun on 2017/10/15.
+ * Created by evenIfAlsoGo on 2018/02/16.
  */
 window.onload = function () {
 	//模块1 背景变色
