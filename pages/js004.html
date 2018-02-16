@@ -1,0 +1,50 @@
+<!--
+	添加不同的class名，有不同的样式：
+		content：最基本的样式
+		title：每一页标题样式
+-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 练习 004</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<div class="content title">JavaScript 练习 004 DOM操作（2）</div>
+	<div class="content">
+		<p>小贴士✎ ：在继续练习 DOM 的基础上，还进行鼠标事件练习。</p>
+	</div>
+	<div class="content" id="div1">
+		<p>1.函数 鼠标经过这个 div 执行变窄变高变色 移出再恢复</p>
+	</div>
+
+	<div class="content">
+		<p id="div2_showBtn">2.鼠标经过这里出现按钮~</p>
+		<button id="div2_hideBtn">我是隐藏的按钮</button>
+	</div>
+
+	<div class="content">
+		<p  id="div3_showDiv">3.鼠标经过就显示弹出层~</p>
+		<div id="div3_hideDiv"><p>这是弹出层这是弹出层这是弹出层</p></div>
+	</div>
+
+	<div class="content" >
+		<p><a href="#" id="div4_showDiv">4.鼠标点击就显示弹出层~</a></p>
+		<div id="div4_hideDiv"><p>这是弹出层这是弹出层这是弹出层</p></div>
+	</div>
+
+	<div class="content" >
+		<p>5. 网页换肤</p>
+		<button id="div5_changeBgcToPink">样式 1</button>
+		<button id="div5_changeBgcToYellow">样式 2</button>
+		<button id="div5_changeBGcToOriginal">恢复原样</button>
+	</div>
+
+	<div class="content" >
+		<p>小结</p>
+	</div>
+</body>
+<script src="../js/js004.js"></script>
+</html>

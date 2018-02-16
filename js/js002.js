@@ -16,13 +16,14 @@ let oBtn_closeThisWindow = document.getElementById("btn_closeThisWindow");
 oBtn_closeThisWindow.onclick = function(){
 	window.close();
 }
-//移动窗口
+//打开窗口
 let myWindow;
 let oBtn_openMyWindow = document.getElementById("btn_openMyWindow");
 oBtn_openMyWindow.onclick = function () {
 	myWindow = window.open('','','height=50,width=50');
 	myWindow.document.write("<p>这是另一种弹出窗口</p>");
 }
+//移动窗口
 let oBtn_moveWindow = document.getElementById("btn_moveWindow");
 oBtn_moveWindow.onclick = function(){
 	myWindow.moveTo(50,50);
