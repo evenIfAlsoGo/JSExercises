@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 练习</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/main.css">
+	<!--引入的 swiper 插件 css 代码-->
+	<link rel="stylesheet" href="../css/other/swiper.min.css">
+</head>
+<body>
+	<div class="content title">JavaScript 练习 006 轮播图</div>
+	<div class="content">
+		<p>小贴士✎ ：类似于选项卡。</p>
+	</div>
+
+	<div class="content">
+		<p>1. 简易：仅实现功能，没有使用 css 修饰</p>
+		<div class="jsShow">
+			<div id="swiper">
+				<div>Slide 1</div>
+				<div>Slide 2</div>
+				<div>Slide 3</div>
+				<div>Slide 4</div>
+				<div>Slide 5</div>
+			</div>
+			<div>
+				<span id="prev"><</span>
+				<span id="next">></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+
+		<p>2. 使用 swiper 插件：http://idangero.us/swiper/</p>
+		<div class="jsShow">
+			<!--插件框架 html 格式-->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">Slide 1</div>
+			      <div class="swiper-slide">Slide 2</div>
+			      <div class="swiper-slide">Slide 3</div>
+			    </div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="../js/js006.js"></script>
+<!--引入的 swiper 插件 js 代码-->
+<script src="../js/other/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+</html>
