@@ -1,9 +1,6 @@
 window.onload = function () {
 	//slide 数量
 	var slides = document.getElementById("swiper").getElementsByTagName("div")
-	for(var i=0;i<slides.length;i++) {
-		slides[i].style.display = "none"
-	}
 	slides[0].style.display = "block"
 	slides.show = 0
 	document.getElementById("next").onclick = function(){

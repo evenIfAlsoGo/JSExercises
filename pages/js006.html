@@ -7,6 +7,11 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<!--引入的 swiper 插件 css 代码-->
 	<link rel="stylesheet" href="../css/other/swiper.min.css">
+	<style>
+		.slide {
+			display: none
+		}
+	</style>
 </head>
 <body>
 	<div class="content title">JavaScript 练习 006 轮播图</div>
@@ -15,14 +20,14 @@
 	</div>
 
 	<div class="content">
-		<p>1. 简易：仅实现功能，没有使用 css 修饰</p>
+		<p>1. 简易：仅实现功能，css 隐藏滑页</p>
 		<div class="jsShow">
 			<div id="swiper">
-				<div>Slide 1</div>
-				<div>Slide 2</div>
-				<div>Slide 3</div>
-				<div>Slide 4</div>
-				<div>Slide 5</div>
+				<div class="slide">Slide 1</div>
+				<div class="slide">Slide 2</div>
+				<div class="slide">Slide 3</div>
+				<div class="slide">Slide 4</div>
+				<div class="slide">Slide 5</div>
 			</div>
 			<div>
 				<span id="prev"><</span>
