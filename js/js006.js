@@ -38,10 +38,9 @@ window.onload = function () {
 		slides2[slides2.show].style.display = "block"
 		circles[slides2.show].style.color = "red"
 	}
-	var timer = function(){
+	window.setInterval(function(){
 		pageTurn("next")
-	}
-	window.setInterval(timer,2000);
+	}, 2000);
 	document.getElementById("next2").onclick = function(){
 		pageTurn("next")
 	}
