@@ -15,8 +15,16 @@
 <body>
 	<div class="header content title">
 		JavaScript 练习
-		<p>✉ 大家好，更好地帮助你学习JavaScript.</p>
+		<p>✉ 大家好，帮助你更好地学习 JavaScript.</p>
+		<p class="more">
+			<span id="wx"><a href="#" target="_parent">学习群</a></span>
+			<span><a href="https://github.com/evenIfAlsoGo/JSExercises/blob/master/README.md">帮助</a></span>
+		</p>
 	</div>
+	<div id="card">
+			<p>扫描二维码回复 jsex 入群</p>
+			<img src="images/wx.png" alt="">
+		</div>
 	<!--主页主体 main -->
 	<div class="main">
 		<div class="list">
@@ -32,11 +40,11 @@
 						<span class="listTime">更新于 2017.11.09</span>
 					</li>
 					<li>
-						<a href="pages/js003.html">3. DOM操作（1）</a>
+						<a href="pages/js003.html">3. DOM操作 ①</a>
 						<span class="listTime">更新于 2018.02.16</span>
 					</li>
 					<li>
-						<a href="pages/js004.html">4. DOM操作（2）</a>
+						<a href="pages/js004.html">4. DOM操作 ②</a>
 						<span class="listTime">更新于 2018.02.16</span>
 					</li>
 				</ol>
@@ -80,36 +88,19 @@
 		</div>
 	</div>
 	<!--主页主体 main 结束-->
-	<div class="sideBar">
-		<div class="banner">
-			<a href="https://evenifalsogo.github.io/">
-				<button>关注我</button>
-			</a>
-			<span>一个很皮的人</span>
-		</div>
-		<div class="guide">
-			<a href="https://github.com/evenIfAlsoGo/JSExercises/blob/master/README.md">
-				<button>使用帮助</button>
-			</a>
-			<span>初次使用建议查看哦</span>
-		</div>
-		<div class="codeSource">
-			<a href="https://github.com/evenIfAlsoGo/JSExercises">
-				<button>查看源码</button>
-			</a>
-			<span>这个网站是开源的</span>
-		</div>
-		<div class="friendLink">
-			<div class="codeSource">
-				<p>友情链接</p>
-				<li>测试</li>
-				<li>测试</li>
-				<li>测试</li>
-			</div>
-		</div>
-	</div>
 	<div class="footer">
-		<div class="copyright">Copyright © 2017 <a href="https://evenifalsogo.github.io/">evenIfAlsoGo </a>Incorporated. All rights reserved.</div>
+		<div id="copyright">Copyright © 2017 <a href="https://evenifalsogo.github.io/">evenIfAlsoGo </a>Incorporated. All rights reserved.</div>
 	</div>
 </body>
+<script>
+	var card = document.getElementById("card")
+	card.style.display = "none"
+	document.getElementById("wx").onclick = function () {
+		if(card.style.display=="none"){
+			card.style.display = "block"
+		} else {
+			card.style.display = "none"
+		}
+	}
+</script>
 </html>

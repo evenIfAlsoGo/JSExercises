@@ -3,17 +3,22 @@
 	font-size: 28px;
 	text-align: center;
 }
-.jsShow {
-	padding: 10px 0 0 30px
-}	
-/* content 模块 */
+.more {
+	text-align: right;
+}
+
 .content {
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: #666 1px 1px 2px;
 }
 
-/* list 模块*/
+#card {
+	background: #fff;
+	box-shadow: #666 2px 2px 2px;
+	width: 300px;
+}
+
 .listTitle {
 	height: 45px;
 	line-height: 45px;
@@ -22,7 +27,7 @@
 .listTime {
 	display: block;
 	float: right;
-	font-size: 15px;
+	font-size: 16px;
 }
 .list ul li{
 	list-style: none;
@@ -33,14 +38,7 @@
 	background: #EBF5DF;
 }
 
-/* sideBar 模块 */
-.sideBar {
-	background: #63a761;
-}
-.sideBar div {
-	background: #EBF5DF;
-}
-.copyright {
+#copyright {
 	text-align: center;
 	font-size: 15px;
 }

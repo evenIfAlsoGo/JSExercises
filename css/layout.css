@@ -1,20 +1,25 @@
 /*整体布局*/
-body {
-	padding-bottom: 50px;
-}
-
 .main {
-	float: left;
-	margin-left: 5%;
-	width: 65%;
+	margin: 0 5%;
 }
 .header p{
-	padding: 30px 0 0   0;
+	padding: 20px 0 0 0;
 }
+.more span{
+	padding-right: 30px;
+}
+#card {
+	position: fixed;
+	right: 10%;
+	padding: 20px 0 0 0;
+}	
 .content {
 	margin: 10px 5%;
 	padding: 25px 0;
 }
+.jsShow {
+	padding: 10px 0 0 30px
+}	
 .list {
 	padding: 20px 0;
 }
@@ -23,25 +28,6 @@ body {
 }
 .list ul ol li{
 	padding: 10px 0 10px 30px ;
-}
-
-.sideBar {
-	float: right;
-	margin: 20px 5% 0 0;
-	width: 21%;
-}
-.sideBar div {
-	margin-top: 15px;
-	padding: 5px;
-}
-.friendLink p {
-	margin: -10px 0 10px 20px;
-}
-.sideBar button {
-	margin: 10px 10px 10px 20px;
-}
-.friendLink li {
-	margin: 5px 0 0 12%;
 }
 
 .footer {
