@@ -63,8 +63,10 @@
 			</ol>
 		</div>
      */
-    $.getJSON("./list.json", function (data) {
-        let html = "";
+    /* $.getJSON()这个方法，url我请求的是跨域文件，本地不能读取。
+     */
+    $.getJSON("http://evgo2017.com/JSExercises/list.json", function (data) {
+        let html = ""
         $.each(data, function (i, filed) {
             html += "<ol><p class='listTitle'>"+i+"</p>"
             $.each(filed, function (title, item) {
