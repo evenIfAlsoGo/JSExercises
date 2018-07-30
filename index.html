@@ -11,96 +11,68 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
 	<base target="_blank" />
+
+    <style>
+        .list {
+            background: #EBF5DF;
+        }
+        .list ol li{
+            list-style: none;
+            padding: 10px 0 20px 30px;
+            height: 20px;
+        }
+        .listTitle {
+            height: 45px;
+            line-height: 45px;
+            font-weight: 700;
+            padding-left: 20px;
+            background: #63a761;
+        }
+        .listTime {
+            margin-right: 20px;
+            display: block;
+            float: right;
+            font-size: 16px;
+        }
+        .main {
+            margin: 0 5%;
+        }
+    </style>
 </head>
 <body>
-	<div class="header content title">
-		JavaScript 练习
-		<p>✉ 大家好，帮助你更好地学习 JavaScript.</p>
-		<p class="more">
-			<span id="wx"><a href="#" target="_parent">学习群</a></span>
-			<span><a href="https://github.com/evenIfAlsoGo/JSExercises/blob/master/README.md">帮助</a></span>
-		</p>
+	<div class="content">
+		<p class="title">JavaScript 练习</p>
+        <p class="tips"><a href="http://www.evgo2017.com" target="_parent">✉ 联系我</a></p>
 	</div>
-	<div id="card">
-			<p>扫描二维码回复 jsex 入群</p>
-			<img src="images/wx.png" alt="">
-		</div>
-	<!--主页主体 main -->
-	<div class="main">
-		<div class="list">
-			<ul>
-				<li><p class="listTitle">第一部分 基础</p></li>
-				<ol>
-					<li>
-						<a href="pages/js001.html">1. 消息框</a>
-						<span class="listTime">更新于 2017.11.08</span>
-					</li>
-					<li>
-						<a href="pages/js002.html">2. 窗口</a>
-						<span class="listTime">更新于 2017.11.09</span>
-					</li>
-					<li>
-						<a href="pages/js003.html">3. DOM操作 ①</a>
-						<span class="listTime">更新于 2018.02.16</span>
-					</li>
-					<li>
-						<a href="pages/js004.html">4. DOM操作 ②</a>
-						<span class="listTime">更新于 2018.02.16</span>
-					</li>
-				</ol>
 
-				<li><p class="listTitle">第二部分 进阶</p></li>
-				<ol>
-					<li>
-						<a href="pages/js005.html">5. 选项卡</a>
-						<span class="listTime">更新于 2018.02.17</span>
-					</li>
-					<li>
-						<a href="pages/js006.html">6. 轮播图</a>
-						<span class="listTime">更新于 2018.02.18</span>
-					</li>
-					<li>
-						<a href="pages/js007.html">7. JQuery</a>
-						<span class="listTime">更新于 2018.02.19</span>
-					</li>
-					<li>
-						<a href="#">测试</a>
-						<span class="listTime">更新于 2017.11.10</span>
-					</li>
-					<li>
-						<a href="#">测试</a>
-						<span class="listTime">更新于 2017.11.10</span>
-					</li>
-					<li>
-						<a href="#">测试</a>
-						<span class="listTime">更新于 2017.11.10</span>
-					</li>
-					<li>
-						<a href="#">测试</a>
-						<span class="listTime">更新于 2017.11.10</span>
-					</li>
-					<li>
-						<a href="#">测试</a>
-						<span class="listTime">更新于 2017.11.10</span>
-					</li>
-				</ol>
-			</ul>
-		</div>
-	</div>
-	<!--主页主体 main 结束-->
-	<div class="footer">
-		<div id="copyright">Copyright © 2017 <a href="https://evenifalsogo.github.io/">evenIfAlsoGo </a>Incorporated. All rights reserved.</div>
+	<div class="main">
+		<div id="list" class="list"></div>
 	</div>
 </body>
+
+<script src="js/other/jquery.js"></script>
 <script>
-	var card = document.getElementById("card")
-	card.style.display = "none"
-	document.getElementById("wx").onclick = function () {
-		if(card.style.display=="none"){
-			card.style.display = "block"
-		} else {
-			card.style.display = "none"
-		}
-	}
+    /* 添加列表数据 示例：
+         <div id="list" class="list">
+			<ol>
+			    <p class="listTitle">第一部分 基础</p>
+				<li>
+					<a href="pages/js001.html">1. 消息框</a>
+					<span class="listTime">更新于 2017.11.08</span>
+				</li>
+			</ol>
+		</div>
+     */
+    $.getJSON("./list.json", function (data) {
+        let html = "";
+        $.each(data, function (i, filed) {
+            html += "<ol><p class='listTitle'>"+i+"</p>"
+            $.each(filed, function (title, item) {
+                html += "<li><a href='./pages/"+item.url+"'>"+title+"</a><span class='listTime'>更新于 "+item.updateTime+"</span></li>"
+            })
+            html += "</ol>"
+        })
+        $("#list").html(html)
+    })
 </script>
 </html>
