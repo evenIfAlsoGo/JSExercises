@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 练习</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<style>
+	#more {
+		width: 120px;
+		height: 50px;
+		overflow: hidden;
+	}
+</style>
+<body>
+	<div class="content title">JavaScript 练习 008 </div>
+
+	<div class="content">
+		<p>小贴士✎ ：纯原生 JS 完成功能，无 CSS 修饰外观</p>
+	</div>
+
+	<div class="content">
+		<p>1. alert ：警告框，用于确保用户可以得到某些信息。</p>
+		<div class="jsShow">
+			<div id="more">更多信息更多信息更多信息更多信息更多信息</div>
+			<button id="showMore">more</button>
+		</div>
+	</div>
+</body>
+<script src="../js/js008.js"></script>
+<script>
+	document.getElementById("showMore").onclick = function () {
+		document.getElementById("more").style.height = 200px;
+	}
+</script>
+</html>

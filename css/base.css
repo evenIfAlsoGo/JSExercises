@@ -1,0 +1,36 @@
+/*基本样式*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: STheiti, Verdana, 宋体, Geneva, sans-serif;
+}
+body {
+	background: #BFDBBB;
+}
+p {
+	margin-left: 20px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+button {
+	margin: 10px 0 0 20px;
+	padding: 8px 10px;
+	color: white;
+	outline: none;
+	background: royalblue;
+	border: none;
+	border-radius: 5px;
+}
+img {
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+

@@ -1,0 +1,37 @@
+/*整体布局*/
+.main {
+	margin: 0 5%;
+}
+.header p{
+	padding: 20px 0 0 0;
+}
+.more span{
+	padding-right: 30px;
+}
+#card {
+	position: fixed;
+	right: 10%;
+	padding: 20px 0 0 0;
+}	
+.content {
+	margin: 10px 5%;
+	padding: 25px 0;
+}
+.jsShow {
+	padding: 10px 0 0 30px
+}	
+.list {
+	padding: 20px 0;
+}
+.listTime {
+	margin-right: 20px;
+}
+.list ul ol li{
+	padding: 10px 0 10px 30px ;
+}
+
+.footer {
+	clear: both;
+	padding-top: 30px;
+	margin-bottom: -40px;
+}

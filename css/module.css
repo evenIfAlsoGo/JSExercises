@@ -1,0 +1,44 @@
+/* 各个模块样式 */
+.title{
+	font-size: 28px;
+	text-align: center;
+}
+.more {
+	text-align: right;
+}
+
+.content {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: #666 1px 1px 2px;
+}
+
+#card {
+	background: #fff;
+	box-shadow: #666 2px 2px 2px;
+	width: 300px;
+}
+
+.listTitle {
+	height: 45px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.listTime {
+	display: block;
+	float: right;
+	font-size: 16px;
+}
+.list ul li{
+	list-style: none;
+	background: #63a761;
+}
+.list ul ol li{
+	height: 20px;
+	background: #EBF5DF;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 15px;
+}
