@@ -1,6 +1,6 @@
 原生 JavaScript 练习网站
 
-在线浏览地址：https://evenifalsogo.github.io/JSExercises/
+在线浏览地址：https://evgo2017.github.io/JSExercises/
 
 # 使用方式
 
